@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BB19BE60A86DF0922B09D3D /* Pods_ControlRemotoIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C9CD4FE351CCB76E054438 /* Pods_ControlRemotoIOS.framework */; };
+		503E09C72ABB3AD600D1C036 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503E09C62ABB3AD600D1C036 /* LoginViewModel.swift */; };
+		5047647C2AC44FF400FF35DD /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5047647B2AC44FF400FF35DD /* ToastView.swift */; };
+		5047647E2AC4506C00FF35DD /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5047647D2AC4506C00FF35DD /* Toast.swift */; };
+		504764812AC4519100FF35DD /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504764802AC4519100FF35DD /* ToastModifier.swift */; };
+		504788C52AB9D6D6003C929B /* ControlRemotoIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504788C42AB9D6D6003C929B /* ControlRemotoIOSApp.swift */; };
+		504788C72AB9D6D6003C929B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504788C62AB9D6D6003C929B /* ContentView.swift */; };
+		504788C92AB9D6D7003C929B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504788C82AB9D6D7003C929B /* Assets.xcassets */; };
+		504788CD2AB9D6D7003C929B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504788CC2AB9D6D7003C929B /* Preview Assets.xcassets */; };
+		504788D82AB9D850003C929B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504788D72AB9D850003C929B /* LoginView.swift */; };
+		50BFC24C2AFA693B008E6D28 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC24B2AFA693B008E6D28 /* ApiResponse.swift */; };
+		50BFC24F2AFA700D008E6D28 /* AuthenticationUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC24E2AFA700D008E6D28 /* AuthenticationUrls.swift */; };
+		50BFC2512AFA7070008E6D28 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC2502AFA7070008E6D28 /* AuthenticationService.swift */; };
+		50BFC2552AFA74A2008E6D28 /* LoginDataDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC2542AFA74A2008E6D28 /* LoginDataDTO.swift */; };
+		50BFC2572AFA74F8008E6D28 /* CompanyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC2562AFA74F8008E6D28 /* CompanyDTO.swift */; };
+		50BFC2592AFA7D42008E6D28 /* AuthenticationRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC2582AFA7D42008E6D28 /* AuthenticationRepo.swift */; };
+		50BFC25D2AFA8328008E6D28 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC25C2AFA8328008E6D28 /* LoginData.swift */; };
+		50BFC25F2AFBBD9B008E6D28 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC25E2AFBBD9B008E6D28 /* Resource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23635359959336887416CFEF /* Pods-ControlRemotoIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlRemotoIOS.debug.xcconfig"; path = "Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		503E09C62ABB3AD600D1C036 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		5047647B2AC44FF400FF35DD /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		5047647D2AC4506C00FF35DD /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		504764802AC4519100FF35DD /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		504788C12AB9D6D6003C929B /* ControlRemotoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ControlRemotoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504788C42AB9D6D6003C929B /* ControlRemotoIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlRemotoIOSApp.swift; sourceTree = "<group>"; };
+		504788C62AB9D6D6003C929B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		504788C82AB9D6D7003C929B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504788CA2AB9D6D7003C929B /* ControlRemotoIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ControlRemotoIOS.entitlements; sourceTree = "<group>"; };
+		504788CC2AB9D6D7003C929B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		504788D72AB9D850003C929B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		50BFC24B2AFA693B008E6D28 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		50BFC24E2AFA700D008E6D28 /* AuthenticationUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUrls.swift; sourceTree = "<group>"; };
+		50BFC2502AFA7070008E6D28 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
+		50BFC2542AFA74A2008E6D28 /* LoginDataDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataDTO.swift; sourceTree = "<group>"; };
+		50BFC2562AFA74F8008E6D28 /* CompanyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDTO.swift; sourceTree = "<group>"; };
+		50BFC2582AFA7D42008E6D28 /* AuthenticationRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepo.swift; sourceTree = "<group>"; };
+		50BFC25C2AFA8328008E6D28 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		50BFC25E2AFBBD9B008E6D28 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		A8D2CE2BFEFC1AD00D5715FC /* Pods-ControlRemotoIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlRemotoIOS.release.xcconfig"; path = "Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS.release.xcconfig"; sourceTree = "<group>"; };
+		C2C9CD4FE351CCB76E054438 /* Pods_ControlRemotoIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ControlRemotoIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504788BE2AB9D6D6003C929B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB19BE60A86DF0922B09D3D /* Pods_ControlRemotoIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		500956882ABC7D0500457A9B /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				500956892ABC8ACC00457A9B /* Alerts */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		500956892ABC8ACC00457A9B /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				5047647F2AC4517800FF35DD /* Toast */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		501DCD3A2AF2779000D9F672 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC2532AFA7260008E6D28 /* dtos */,
+				50BFC2522AFA7236008E6D28 /* repositories */,
+				50BFC24D2AFA6FD7008E6D28 /* datasource */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		5047647F2AC4517800FF35DD /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				5047647B2AC44FF400FF35DD /* ToastView.swift */,
+				5047647D2AC4506C00FF35DD /* Toast.swift */,
+				504764802AC4519100FF35DD /* ToastModifier.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		504788B82AB9D6D6003C929B = {
+			isa = PBXGroup;
+			children = (
+				504788C32AB9D6D6003C929B /* ControlRemotoIOS */,
+				504788C22AB9D6D6003C929B /* Products */,
+				CF2372329FA80EA00AE1E7C7 /* Pods */,
+				91B279A06331C6E37F45F01F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		504788C22AB9D6D6003C929B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504788C12AB9D6D6003C929B /* ControlRemotoIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504788C32AB9D6D6003C929B /* ControlRemotoIOS */ = {
+			isa = PBXGroup;
+			children = (
+				504788D32AB9D730003C929B /* core */,
+				504788D42AB9D76C003C929B /* features */,
+				504788C62AB9D6D6003C929B /* ContentView.swift */,
+				504788C42AB9D6D6003C929B /* ControlRemotoIOSApp.swift */,
+				504788C82AB9D6D7003C929B /* Assets.xcassets */,
+				504788CA2AB9D6D7003C929B /* ControlRemotoIOS.entitlements */,
+				504788CB2AB9D6D7003C929B /* Preview Content */,
+			);
+			path = ControlRemotoIOS;
+			sourceTree = "<group>";
+		};
+		504788CB2AB9D6D7003C929B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				504788CC2AB9D6D7003C929B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		504788D32AB9D730003C929B /* core */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC24A2AFA6919008E6D28 /* model */,
+				500956882ABC7D0500457A9B /* utils */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		504788D42AB9D76C003C929B /* features */ = {
+			isa = PBXGroup;
+			children = (
+				504788D52AB9D7E7003C929B /* authentification */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		504788D52AB9D7E7003C929B /* authentification */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC25A2AFA8303008E6D28 /* domain */,
+				501DCD3A2AF2779000D9F672 /* data */,
+				504788D62AB9D82B003C929B /* presentation */,
+			);
+			path = authentification;
+			sourceTree = "<group>";
+		};
+		504788D62AB9D82B003C929B /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				504788D72AB9D850003C929B /* LoginView.swift */,
+				503E09C62ABB3AD600D1C036 /* LoginViewModel.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		50BFC24A2AFA6919008E6D28 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC24B2AFA693B008E6D28 /* ApiResponse.swift */,
+				50BFC25E2AFBBD9B008E6D28 /* Resource.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		50BFC24D2AFA6FD7008E6D28 /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC24E2AFA700D008E6D28 /* AuthenticationUrls.swift */,
+				50BFC2502AFA7070008E6D28 /* AuthenticationService.swift */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+		50BFC2522AFA7236008E6D28 /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC2582AFA7D42008E6D28 /* AuthenticationRepo.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		50BFC2532AFA7260008E6D28 /* dtos */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC2542AFA74A2008E6D28 /* LoginDataDTO.swift */,
+				50BFC2562AFA74F8008E6D28 /* CompanyDTO.swift */,
+			);
+			path = dtos;
+			sourceTree = "<group>";
+		};
+		50BFC25A2AFA8303008E6D28 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC25B2AFA830F008E6D28 /* models */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		50BFC25B2AFA830F008E6D28 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC25C2AFA8328008E6D28 /* LoginData.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		91B279A06331C6E37F45F01F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2C9CD4FE351CCB76E054438 /* Pods_ControlRemotoIOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF2372329FA80EA00AE1E7C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23635359959336887416CFEF /* Pods-ControlRemotoIOS.debug.xcconfig */,
+				A8D2CE2BFEFC1AD00D5715FC /* Pods-ControlRemotoIOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504788C02AB9D6D6003C929B /* ControlRemotoIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504788D02AB9D6D7003C929B /* Build configuration list for PBXNativeTarget "ControlRemotoIOS" */;
+			buildPhases = (
+				0D353A90670C19B331F5D5C0 /* [CP] Check Pods Manifest.lock */,
+				504788BD2AB9D6D6003C929B /* Sources */,
+				504788BE2AB9D6D6003C929B /* Frameworks */,
+				504788BF2AB9D6D6003C929B /* Resources */,
+				BCBB4647B644247823050C86 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ControlRemotoIOS;
+			productName = ControlRemotoIOS;
+			productReference = 504788C12AB9D6D6003C929B /* ControlRemotoIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504788B92AB9D6D6003C929B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					504788C02AB9D6D6003C929B = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 504788BC2AB9D6D6003C929B /* Build configuration list for PBXProject "ControlRemotoIOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 504788B82AB9D6D6003C929B;
+			productRefGroup = 504788C22AB9D6D6003C929B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504788C02AB9D6D6003C929B /* ControlRemotoIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504788BF2AB9D6D6003C929B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504788CD2AB9D6D7003C929B /* Preview Assets.xcassets in Resources */,
+				504788C92AB9D6D7003C929B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D353A90670C19B331F5D5C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ControlRemotoIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBB4647B644247823050C86 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504788BD2AB9D6D6003C929B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BFC24F2AFA700D008E6D28 /* AuthenticationUrls.swift in Sources */,
+				50BFC2572AFA74F8008E6D28 /* CompanyDTO.swift in Sources */,
+				504764812AC4519100FF35DD /* ToastModifier.swift in Sources */,
+				50BFC25F2AFBBD9B008E6D28 /* Resource.swift in Sources */,
+				503E09C72ABB3AD600D1C036 /* LoginViewModel.swift in Sources */,
+				50BFC2592AFA7D42008E6D28 /* AuthenticationRepo.swift in Sources */,
+				504788D82AB9D850003C929B /* LoginView.swift in Sources */,
+				504788C72AB9D6D6003C929B /* ContentView.swift in Sources */,
+				50BFC2552AFA74A2008E6D28 /* LoginDataDTO.swift in Sources */,
+				5047647C2AC44FF400FF35DD /* ToastView.swift in Sources */,
+				50BFC25D2AFA8328008E6D28 /* LoginData.swift in Sources */,
+				50BFC24C2AFA693B008E6D28 /* ApiResponse.swift in Sources */,
+				504788C52AB9D6D6003C929B /* ControlRemotoIOSApp.swift in Sources */,
+				5047647E2AC4506C00FF35DD /* Toast.swift in Sources */,
+				50BFC2512AFA7070008E6D28 /* AuthenticationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		504788CE2AB9D6D7003C929B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		504788CF2AB9D6D7003C929B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		504788D12AB9D6D7003C929B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23635359959336887416CFEF /* Pods-ControlRemotoIOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ControlRemotoIOS/ControlRemotoIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ControlRemotoIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ControlRemotoIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504788D22AB9D6D7003C929B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8D2CE2BFEFC1AD00D5715FC /* Pods-ControlRemotoIOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ControlRemotoIOS/ControlRemotoIOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ControlRemotoIOS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = test.ControlRemotoIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504788BC2AB9D6D6003C929B /* Build configuration list for PBXProject "ControlRemotoIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504788CE2AB9D6D7003C929B /* Debug */,
+				504788CF2AB9D6D7003C929B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504788D02AB9D6D7003C929B /* Build configuration list for PBXNativeTarget "ControlRemotoIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504788D12AB9D6D7003C929B /* Debug */,
+				504788D22AB9D6D7003C929B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 504788B92AB9D6D6003C929B /* Project object */;
+}
