@@ -102,7 +102,6 @@ struct LoginView: View {
                                 self.showProgress = false
                                 
                             case .error(let errorMessage):
-                                // Manejar el error, mostrar un mensaje al usuario, etc.
                                 toast = ToastCustom(type: .error, title: "Error", message: errorMessage)
                                 self.showProgress = false
                             case .none:

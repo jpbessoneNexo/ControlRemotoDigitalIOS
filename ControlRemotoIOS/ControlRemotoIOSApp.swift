@@ -10,9 +10,10 @@ import ExytePopupView
 
 @main
 struct ControlRemotoIOSApp: App {
-
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
+        
         WindowGroup {
             LoginView(viewModel: LoginViewModel(authenticationRepo: AuthenticationRepo(authenticationService: AuthenticationService())))
         }

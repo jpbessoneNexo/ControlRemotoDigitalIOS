@@ -16,11 +16,14 @@ struct AuthenticationService {
             "password": password,
             "origin": origin
         ]
+        
+        let url = NetworkConfig.shared.baseUrl! + AuthenticationUrls.LOGIN
         print("_________________________________")
-        print("API Request: \(AuthenticationUrls.LOGIN)")
+        print("API Request: \(url)")
         print("Parameters: \(parameters)")
         
-        AF.request(AuthenticationUrls.LOGIN, method: .post, parameters: parameters, encoding: URLEncoding.httpBody)
+        
+        AF.request(url, method: .post, parameters: parameters, encoding: URLEncoding.httpBody)
             .validate()
             .responseDecodable(of: ApiResponse<LoginDataDTO>.self) { response in
                 switch response.result {

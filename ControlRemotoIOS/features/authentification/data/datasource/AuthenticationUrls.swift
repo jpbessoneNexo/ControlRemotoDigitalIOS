@@ -8,5 +8,5 @@
 import Foundation
 
 struct AuthenticationUrls {
-    static let LOGIN = "https://testing-digital2o23-lupexdo2rq-uc.a.run.app/user/api/v1/login/"
+    static let LOGIN = "user/api/v1/login/"
 }
