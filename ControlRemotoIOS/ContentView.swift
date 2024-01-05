@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var routers : Routers
+    
     var body: some View {
-        LoginView(viewModel: LoginViewModel(authenticationRepo: AuthenticationRepo(authenticationService: AuthenticationService())))
+        
+        NavigationStack(path: $routers.navPath){
+            
+            if SecureDataHolder.shared.getAuthToken() != nil {
+            
+            }else{
+//                LoginView()
+//                    .navigationDestination(for: LoginDestination.self) { router in
+//                        switch router {
+//                        case .home:
+//                            HomeView()
+//                        }
+//                    }
+            }
+            
+        }
     }
 }
 

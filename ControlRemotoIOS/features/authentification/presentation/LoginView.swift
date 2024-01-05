@@ -13,14 +13,12 @@ struct LoginView: View {
     @State private var username = ""
     @State private var password = ""
     @State private var toast: ToastCustom? = nil
-    private var viewModel:LoginViewModel
+    @InjectedLogin private var viewModel: LoginViewModel
     @State private var showProgress = false
-    
-    init(viewModel:LoginViewModel){
-        self.viewModel = viewModel
-    }
+    @Binding var isLoggedin: Bool
     
     var body: some View {
+        
         ScrollView{
             VStack {
                 Image("logoApp")
@@ -94,12 +92,15 @@ struct LoginView: View {
                         .onReceive(viewModel.$authenticationState) { state in
                             switch state {
                             case .loading(let isLoading):
+                                
                                 if isLoading {
                                     // Realizar acciones relacionadas con la carga
                                 }
                             case .success(let loginData):
-                                print("LOGIN SUCCESS")
+                                
                                 self.showProgress = false
+                                SecureDataHolder.shared.saveAuthToken(drfToken: loginData.drfToken)
+                                isLoggedin = true
                                 
                             case .error(let errorMessage):
                                 toast = ToastCustom(type: .error, title: "Error", message: errorMessage)
@@ -121,14 +122,14 @@ struct LoginView: View {
         }
         .background(Color("light_purple"))
         .toastView(toast: $toast)
-        
-        
     }
 }
 
+
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(viewModel: LoginViewModel(authenticationRepo: AuthenticationRepo(authenticationService: AuthenticationService())))
+        @State var isLoggedin : Bool = false
+        LoginView(isLoggedin: $isLoggedin)
     }
 }
 

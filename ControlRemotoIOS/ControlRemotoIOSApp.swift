@@ -11,11 +11,22 @@ import ExytePopupView
 @main
 struct ControlRemotoIOSApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @EnvironmentObject var routers : Routers
+    
+    @State var isLoggedin: Bool = if(SecureDataHolder.shared.getAuthToken() != nil ) {
+        true
+    }else{
+        false
+    }
     
     var body: some Scene {
-        
         WindowGroup {
-            LoginView(viewModel: LoginViewModel(authenticationRepo: AuthenticationRepo(authenticationService: AuthenticationService())))
+            if isLoggedin {
+                HomeView(isLoggedin: $isLoggedin)
+                    .environmentObject(Routers())
+            }else{
+                LoginView(isLoggedin: $isLoggedin)
+            }
         }
     }
 }

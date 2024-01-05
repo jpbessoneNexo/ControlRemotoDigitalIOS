@@ -17,6 +17,7 @@
 		504788C92AB9D6D7003C929B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504788C82AB9D6D7003C929B /* Assets.xcassets */; };
 		504788CD2AB9D6D7003C929B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504788CC2AB9D6D7003C929B /* Preview Assets.xcassets */; };
 		504788D82AB9D850003C929B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504788D72AB9D850003C929B /* LoginView.swift */; };
+		508EA7DA2B31BD09003DB158 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 508EA7D92B31BD09003DB158 /* Router.swift */; };
 		50BFC24C2AFA693B008E6D28 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC24B2AFA693B008E6D28 /* ApiResponse.swift */; };
 		50BFC24F2AFA700D008E6D28 /* AuthenticationUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC24E2AFA700D008E6D28 /* AuthenticationUrls.swift */; };
 		50BFC2512AFA7070008E6D28 /* AuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC2502AFA7070008E6D28 /* AuthenticationService.swift */; };
@@ -27,6 +28,23 @@
 		50BFC25F2AFBBD9B008E6D28 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC25E2AFBBD9B008E6D28 /* Resource.swift */; };
 		50BFC26D2AFE71BC008E6D28 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC26C2AFE71BC008E6D28 /* NetworkConfig.swift */; };
 		50BFC26F2AFE787F008E6D28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC26E2AFE787F008E6D28 /* AppDelegate.swift */; };
+		50BFC2762B03951D008E6D28 /* ItemHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFC2752B03951D008E6D28 /* ItemHomeCell.swift */; };
+		50C4B4862B18BD26001C68CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4852B18BD26001C68CD /* HomeView.swift */; };
+		50C4B4882B18BFA5001C68CD /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4872B18BFA5001C68CD /* DeviceViewModel.swift */; };
+		50C4B48B2B18BFFE001C68CD /* DeviceRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B48A2B18BFFE001C68CD /* DeviceRepo.swift */; };
+		50C4B48E2B18C04D001C68CD /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B48D2B18C04D001C68CD /* DeviceService.swift */; };
+		50C4B4902B18C065001C68CD /* DeviceUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B48F2B18C065001C68CD /* DeviceUrls.swift */; };
+		50C4B4932B18C14F001C68CD /* DeviceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4922B18C14F001C68CD /* DeviceDTO.swift */; };
+		50C4B4952B18C1F6001C68CD /* PlaylistDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4942B18C1F6001C68CD /* PlaylistDTO.swift */; };
+		50C4B4972B18C23D001C68CD /* ProgrammingDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4962B18C23D001C68CD /* ProgrammingDTO.swift */; };
+		50C4B49A2B18C838001C68CD /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4992B18C838001C68CD /* Device.swift */; };
+		50C4B49C2B18C8DD001C68CD /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B49B2B18C8DD001C68CD /* Playlist.swift */; };
+		50C4B49E2B18C925001C68CD /* Programming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B49D2B18C925001C68CD /* Programming.swift */; };
+		50C4B4A02B18C9CC001C68CD /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B49F2B18C9CC001C68CD /* Orientation.swift */; };
+		50C4B4A32B1A0917001C68CD /* ModuleInjectionLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4A22B1A0917001C68CD /* ModuleInjectionLogin.swift */; };
+		50C4B4A52B1A14A5001C68CD /* ModuleInjectionDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C4B4A42B1A14A5001C68CD /* ModuleInjectionDevice.swift */; };
+		50D30A332B1A458300BD4080 /* SecureDataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D30A322B1A458300BD4080 /* SecureDataHolder.swift */; };
+		50D30A352B1A460800BD4080 /* SecureDataHolderKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D30A342B1A460800BD4080 /* SecureDataHolderKeys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +64,7 @@
 		504788CA2AB9D6D7003C929B /* ControlRemotoIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ControlRemotoIOS.entitlements; sourceTree = "<group>"; };
 		504788CC2AB9D6D7003C929B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		504788D72AB9D850003C929B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		508EA7D92B31BD09003DB158 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		50BFC24B2AFA693B008E6D28 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		50BFC24E2AFA700D008E6D28 /* AuthenticationUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationUrls.swift; sourceTree = "<group>"; };
 		50BFC2502AFA7070008E6D28 /* AuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationService.swift; sourceTree = "<group>"; };
@@ -56,6 +75,23 @@
 		50BFC25E2AFBBD9B008E6D28 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		50BFC26C2AFE71BC008E6D28 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		50BFC26E2AFE787F008E6D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50BFC2752B03951D008E6D28 /* ItemHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHomeCell.swift; sourceTree = "<group>"; };
+		50C4B4852B18BD26001C68CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		50C4B4872B18BFA5001C68CD /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
+		50C4B48A2B18BFFE001C68CD /* DeviceRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRepo.swift; sourceTree = "<group>"; };
+		50C4B48D2B18C04D001C68CD /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		50C4B48F2B18C065001C68CD /* DeviceUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUrls.swift; sourceTree = "<group>"; };
+		50C4B4922B18C14F001C68CD /* DeviceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDTO.swift; sourceTree = "<group>"; };
+		50C4B4942B18C1F6001C68CD /* PlaylistDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDTO.swift; sourceTree = "<group>"; };
+		50C4B4962B18C23D001C68CD /* ProgrammingDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingDTO.swift; sourceTree = "<group>"; };
+		50C4B4992B18C838001C68CD /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		50C4B49B2B18C8DD001C68CD /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		50C4B49D2B18C925001C68CD /* Programming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programming.swift; sourceTree = "<group>"; };
+		50C4B49F2B18C9CC001C68CD /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
+		50C4B4A22B1A0917001C68CD /* ModuleInjectionLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInjectionLogin.swift; sourceTree = "<group>"; };
+		50C4B4A42B1A14A5001C68CD /* ModuleInjectionDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleInjectionDevice.swift; sourceTree = "<group>"; };
+		50D30A322B1A458300BD4080 /* SecureDataHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataHolder.swift; sourceTree = "<group>"; };
+		50D30A342B1A460800BD4080 /* SecureDataHolderKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataHolderKeys.swift; sourceTree = "<group>"; };
 		5FD2B18EF009B412FCFC25C8 /* Pods-ControlRemotoIOS.releasedev.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlRemotoIOS.releasedev.xcconfig"; path = "Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS.releasedev.xcconfig"; sourceTree = "<group>"; };
 		932367016481CC88AE52CBDD /* Pods-ControlRemotoIOS.debugtesting.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlRemotoIOS.debugtesting.xcconfig"; path = "Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS.debugtesting.xcconfig"; sourceTree = "<group>"; };
 		A8D2CE2BFEFC1AD00D5715FC /* Pods-ControlRemotoIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ControlRemotoIOS.release.xcconfig"; path = "Target Support Files/Pods-ControlRemotoIOS/Pods-ControlRemotoIOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,9 +173,9 @@
 				504788C42AB9D6D6003C929B /* ControlRemotoIOSApp.swift */,
 				504788C82AB9D6D7003C929B /* Assets.xcassets */,
 				504788CA2AB9D6D7003C929B /* ControlRemotoIOS.entitlements */,
-				504788CB2AB9D6D7003C929B /* Preview Content */,
 				50BFC26C2AFE71BC008E6D28 /* NetworkConfig.swift */,
 				50BFC26E2AFE787F008E6D28 /* AppDelegate.swift */,
+				504788CB2AB9D6D7003C929B /* Preview Content */,
 			);
 			path = ControlRemotoIOS;
 			sourceTree = "<group>";
@@ -155,6 +191,9 @@
 		504788D32AB9D730003C929B /* core */ = {
 			isa = PBXGroup;
 			children = (
+				508EA7DD2B31DBCD003DB158 /* navigation */,
+				50D30A312B1A454800BD4080 /* data */,
+				50C4B4A12B1A08C4001C68CD /* di */,
 				50BFC24A2AFA6919008E6D28 /* model */,
 				500956882ABC7D0500457A9B /* utils */,
 			);
@@ -164,6 +203,7 @@
 		504788D42AB9D76C003C929B /* features */ = {
 			isa = PBXGroup;
 			children = (
+				50BFC2702B03949F008E6D28 /* devices */,
 				504788D52AB9D7E7003C929B /* authentification */,
 			);
 			path = features;
@@ -186,6 +226,14 @@
 				503E09C62ABB3AD600D1C036 /* LoginViewModel.swift */,
 			);
 			path = presentation;
+			sourceTree = "<group>";
+		};
+		508EA7DD2B31DBCD003DB158 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				508EA7D92B31BD09003DB158 /* Router.swift */,
+			);
+			path = navigation;
 			sourceTree = "<group>";
 		};
 		50BFC24A2AFA6919008E6D28 /* model */ = {
@@ -237,6 +285,108 @@
 				50BFC25C2AFA8328008E6D28 /* LoginData.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		50BFC2702B03949F008E6D28 /* devices */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC2732B0394D2008E6D28 /* presentation */,
+				50BFC2722B0394C7008E6D28 /* data */,
+				50BFC2712B0394BB008E6D28 /* domain */,
+			);
+			path = devices;
+			sourceTree = "<group>";
+		};
+		50BFC2712B0394BB008E6D28 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				50C4B4982B18C824001C68CD /* models */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		50BFC2722B0394C7008E6D28 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				50C4B4912B18C140001C68CD /* dtos */,
+				50C4B48C2B18C03F001C68CD /* datasource */,
+				50C4B4892B18BFE9001C68CD /* repositories */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		50BFC2732B0394D2008E6D28 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC2742B0394FB008E6D28 /* home */,
+				50C4B4872B18BFA5001C68CD /* DeviceViewModel.swift */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		50BFC2742B0394FB008E6D28 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				50BFC2752B03951D008E6D28 /* ItemHomeCell.swift */,
+				50C4B4852B18BD26001C68CD /* HomeView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		50C4B4892B18BFE9001C68CD /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				50C4B48A2B18BFFE001C68CD /* DeviceRepo.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		50C4B48C2B18C03F001C68CD /* datasource */ = {
+			isa = PBXGroup;
+			children = (
+				50C4B48D2B18C04D001C68CD /* DeviceService.swift */,
+				50C4B48F2B18C065001C68CD /* DeviceUrls.swift */,
+			);
+			path = datasource;
+			sourceTree = "<group>";
+		};
+		50C4B4912B18C140001C68CD /* dtos */ = {
+			isa = PBXGroup;
+			children = (
+				50C4B4922B18C14F001C68CD /* DeviceDTO.swift */,
+				50C4B4942B18C1F6001C68CD /* PlaylistDTO.swift */,
+				50C4B4962B18C23D001C68CD /* ProgrammingDTO.swift */,
+			);
+			path = dtos;
+			sourceTree = "<group>";
+		};
+		50C4B4982B18C824001C68CD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				50C4B4992B18C838001C68CD /* Device.swift */,
+				50C4B49B2B18C8DD001C68CD /* Playlist.swift */,
+				50C4B49D2B18C925001C68CD /* Programming.swift */,
+				50C4B49F2B18C9CC001C68CD /* Orientation.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		50C4B4A12B1A08C4001C68CD /* di */ = {
+			isa = PBXGroup;
+			children = (
+				50C4B4A22B1A0917001C68CD /* ModuleInjectionLogin.swift */,
+				50C4B4A42B1A14A5001C68CD /* ModuleInjectionDevice.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		50D30A312B1A454800BD4080 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				50D30A322B1A458300BD4080 /* SecureDataHolder.swift */,
+				50D30A342B1A460800BD4080 /* SecureDataHolderKeys.swift */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		91B279A06331C6E37F45F01F /* Frameworks */ = {
@@ -379,20 +529,38 @@
 				50BFC24F2AFA700D008E6D28 /* AuthenticationUrls.swift in Sources */,
 				50BFC2572AFA74F8008E6D28 /* CompanyDTO.swift in Sources */,
 				504764812AC4519100FF35DD /* ToastModifier.swift in Sources */,
+				50C4B49C2B18C8DD001C68CD /* Playlist.swift in Sources */,
+				50C4B49A2B18C838001C68CD /* Device.swift in Sources */,
+				50C4B4A32B1A0917001C68CD /* ModuleInjectionLogin.swift in Sources */,
+				50BFC2762B03951D008E6D28 /* ItemHomeCell.swift in Sources */,
 				50BFC25F2AFBBD9B008E6D28 /* Resource.swift in Sources */,
+				50C4B48B2B18BFFE001C68CD /* DeviceRepo.swift in Sources */,
+				508EA7DA2B31BD09003DB158 /* Router.swift in Sources */,
 				503E09C72ABB3AD600D1C036 /* LoginViewModel.swift in Sources */,
+				50C4B4972B18C23D001C68CD /* ProgrammingDTO.swift in Sources */,
 				50BFC2592AFA7D42008E6D28 /* AuthenticationRepo.swift in Sources */,
+				50C4B4902B18C065001C68CD /* DeviceUrls.swift in Sources */,
+				50C4B4932B18C14F001C68CD /* DeviceDTO.swift in Sources */,
 				504788D82AB9D850003C929B /* LoginView.swift in Sources */,
+				50C4B4A52B1A14A5001C68CD /* ModuleInjectionDevice.swift in Sources */,
+				50C4B4882B18BFA5001C68CD /* DeviceViewModel.swift in Sources */,
 				504788C72AB9D6D6003C929B /* ContentView.swift in Sources */,
+				50C4B4A02B18C9CC001C68CD /* Orientation.swift in Sources */,
 				50BFC2552AFA74A2008E6D28 /* LoginDataDTO.swift in Sources */,
 				5047647C2AC44FF400FF35DD /* ToastView.swift in Sources */,
+				50D30A332B1A458300BD4080 /* SecureDataHolder.swift in Sources */,
 				50BFC25D2AFA8328008E6D28 /* LoginData.swift in Sources */,
 				50BFC24C2AFA693B008E6D28 /* ApiResponse.swift in Sources */,
+				50D30A352B1A460800BD4080 /* SecureDataHolderKeys.swift in Sources */,
+				50C4B4952B18C1F6001C68CD /* PlaylistDTO.swift in Sources */,
+				50C4B48E2B18C04D001C68CD /* DeviceService.swift in Sources */,
 				504788C52AB9D6D6003C929B /* ControlRemotoIOSApp.swift in Sources */,
+				50C4B49E2B18C925001C68CD /* Programming.swift in Sources */,
 				5047647E2AC4506C00FF35DD /* Toast.swift in Sources */,
 				50BFC26D2AFE71BC008E6D28 /* NetworkConfig.swift in Sources */,
 				50BFC26F2AFE787F008E6D28 /* AppDelegate.swift in Sources */,
 				50BFC2512AFA7070008E6D28 /* AuthenticationService.swift in Sources */,
+				50C4B4862B18BD26001C68CD /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

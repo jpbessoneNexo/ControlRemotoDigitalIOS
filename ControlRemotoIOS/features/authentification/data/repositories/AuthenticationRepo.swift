@@ -9,11 +9,7 @@ import Foundation
 
 struct AuthenticationRepo{
     
-    private let authenticationService: AuthenticationService
-    
-    init(authenticationService: AuthenticationService) {
-        self.authenticationService = authenticationService
-    }
+    @InjectedLogin private var authenticationService: AuthenticationService
     
     func login(username: String, password: String, completion: @escaping (Result<LoginData, Error>) -> Void) {
         authenticationService.login(username: username, password: password, origin: "mobile") { result in

@@ -10,4 +10,8 @@ pod 'ExytePopupView'
 
 pod 'Alamofire'
 
+pod 'Swinject'
+
+pod 'SwiftKeychainWrapper'
+
 end

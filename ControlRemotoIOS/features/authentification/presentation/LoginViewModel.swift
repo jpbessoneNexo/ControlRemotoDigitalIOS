@@ -9,12 +9,9 @@ import Foundation
 import Combine
 
 class LoginViewModel: ObservableObject {
-    @Published var authenticationState: Resource<LoginData>? = nil
-    private var authenticationRepo: AuthenticationRepo
     
-    init(authenticationRepo: AuthenticationRepo) {
-        self.authenticationRepo = authenticationRepo
-    }
+    @Published var authenticationState: Resource<LoginData>? = nil
+    @InjectedLogin var authenticationRepo: AuthenticationRepo
     
     func loginUser(username: String, passwords: String) {
         self.authenticationState = .loading(true)
